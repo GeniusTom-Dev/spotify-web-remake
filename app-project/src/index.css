@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Alkatra', cursive;
+    color: white;
+}
+
+:root{
+    --navbar: #161717;
+    --main: #242424;
+    --search: #545454;
+    --blue: rgb(17, 0, 255);
+}
+
+*::-webkit-scrollbar{
+    background: transparent;
+    height: 15px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #161717;
+    border-radius: 10px;
+}
+
+.icon-shadow{
+    filter: drop-shadow(0 0 0.75rem #fff);
+}  
+
+.glass{
+    background: linear-gradient(135deg, rgba(17, 0, 255, 0.1), rgba(0, 60, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
