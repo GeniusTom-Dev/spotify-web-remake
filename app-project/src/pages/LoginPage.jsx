@@ -28,16 +28,17 @@ function LoginPage() {
   if(token) return <Navigate to="/home"/>
 
   return (
-    <div className='bg-[var(--grey)] h-[100vh] w-[100vw] flex flex-col justify-around items-center'>
-        <div className="flex items-center ">
-          {/* <img src={spotify} alt="spotify logo" className="w-16 mr-4"/> */}
-          <h1 className="ml-4 text-4xl sm:text-8xl">Spotify</h1>
-        </div>
+
+    <div className="w-full h-[100vh] flex items-center justify-center">
+      <div className='bg-[var(--main)] h-[80vh] w-[80vw] rounded-3xl relative flex items-center justify-center'>
+
+    
         
         <div className="flex flex-col border p-8 rounded-xl -translate-y-1/2">
           <h1 className='text-4xl mb-8'>Login to Spotify</h1>
           <button className='bg-[var(--green)] w-full rounded-xl text-xl py-2 md:py-0'><a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login</a></button>
         </div>
+      </div>
       
     </div>
   )
